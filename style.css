@@ -6,6 +6,34 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+p{
+    line-height: 2;
+}
 /*utilities*/
-
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*header*/
+
+header.site-init{
+    background-image: url(./realEstate-img-main/realEstate-img-main/header.jpg);
+    background-position: center middle;
+    background-size: cover;
+    height: 275px;
+    color: white;
+    text-align: center;
+}
+.bar{
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+/*menu*/
+.menu a{
+    color: white;
+   margin-right: 20px;
+}
+
