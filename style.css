@@ -41,7 +41,9 @@ img{
 }
 .flex-c{
     display:flex ;
+    flex-direction: row;
 }
+
 .btn-see-details{
     display: 
     block;
@@ -58,6 +60,21 @@ img{
     justify-content: space-around;
     align-items: center;
     height: 100px;
+}
+@media(max-width:768px){
+    /*mobile presentation*/
+    .bar{
+        flex-direction: column;
+    }
+    .container{
+        width: 90%;
+    }
+    .flex-c{
+        flex-direction: column;
+    }
+    h3{
+        text-align: center;
+    }
 }
 .bt{
     font-weight: bold;
@@ -76,8 +93,21 @@ header.site-init{
     color: white;
     text-align: center;
 }
-
-
+header.about{
+    background-image: url(./realEstate-img-main/realEstate-img-main/announcement5.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    color: rgb(235, 238, 243);
+    text-align: center;
+}
+header.blog{
+    background-image:url(./realEstate-img-main/realEstate-img-main/blog1.jpg);
+    background-position: center center;
+    background-size:cover;
+    height: 400px;
+    text-align: center;
+}
 /*menu*/
 .menu a{
     color: white;
@@ -91,6 +121,13 @@ header.site-init{
 .more-about-item p{
     text-align: justify;
 }
+@media(max-width:768px){
+    .more-about-item img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+}
 /*houses and penthouses*/
 
 .houses-items{
@@ -99,6 +136,13 @@ header.site-init{
 }
 .houses-item a{
     color: black;
+}
+.flex-icon{
+    display: flex;
+}
+.flex-icon p{
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 /*contact*/
 .site-contact{
@@ -130,4 +174,11 @@ header.site-init{
 .form-control label{
     display: inline-block;
     width: 150px;
+}
+/*footer*/
+.footer{
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    align-items: center;
 }
